@@ -1,0 +1,27 @@
+/*
+* #PAGES 
+*/
+
+$page-width: 90%;
+$spacer: 5%;
+
+%row{
+	width:$page-width;
+	margin-left:auto;
+	margin-right: auto;
+	padding:0 5%;
+}	
+
+.row{
+	@extend %row;
+}
+
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+.spaced, %spaced{
+	margin-top: $spacer;
+}

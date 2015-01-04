@@ -1,0 +1,60 @@
+.section{
+	@extend %row;
+	@extend %spaced;
+
+	.layout{
+		.grid__item{
+			p{
+			
+			}	
+		}
+	}
+
+	 @include media-query(palm) {
+  
+       margin-top: 20px;
+	}
+}
+
+.a-section{
+	.layout{
+		@extend %layout--large;
+	}
+}
+
+.b-section{
+	.layout{
+		@extend %layout;
+	}
+}
+
+.imagery{
+	@extend %spaced;
+	.media{
+		position:relative;
+
+		&__text{
+			@extend %center-center;
+			background:#ffc;
+			width:80%;
+		}
+	}
+}
+
+.imagery-fullwidth{
+	background:#ffc;
+	.media{
+		&__img{
+			img{
+				width:100% !important;
+			}
+		}
+	}
+}
+
+.footer{
+	@extend %spaced;
+	padding: $spacer 0;
+	background: #eee;
+	
+}
